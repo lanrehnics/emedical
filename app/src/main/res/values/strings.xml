@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">eMedicals</string>
+    <string name="field_cannot_be_empty">Field cannot be empty</string>
+    <string name="your_email_cannot_be_empty">This place cannot be empty</string>
+    <string name="your_password_cannot_be_empty">This place cannot be empty</string>
+    <string name="invalid_email">This email is invalid</string>
+    <string name="facebook_app_id">362064374167397</string>
+    <string name="fb_login_protocol_scheme">fb362064374167397</string>
+    <string name="gender_prompt">Gender</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+
+    <string-array name="gender_arrays">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="avail">
+        <item>Available</item>
+        <item>Busy</item>
+        <item>Not Available</item>
+    </string-array>
+
+    <string name="state_prompt">Gender</string>
+    <string name="drawer_close">close</string>
+    <string name="open">open</string>
+
+    <string-array name="state_arrays">
+        <item>Select State</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Anambra</item>
+        <item>Akwa Ibom</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Enugu</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+    </string-array>
+</resources>

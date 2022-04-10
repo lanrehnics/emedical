@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.parallax.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parallaxScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/next"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.florent37.parallax.ParallaxView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:parallaxVertical="0.3">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <ImageView
+                    android:id="@+id/im_doc_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/doc" />
+
+                <com.wonderkiln.blurkit.BlurLayout
+                    android:id="@+id/blurLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.florent37.parallax.ParallaxView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#906b6b6b"
+                        app:parallaxVertical="0.5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/im_doc"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:src="@drawable/doc"
+                                app:civ_border_color="#10000000"
+                                app:civ_border_width="3dp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_doc_job"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Name Here"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+                        <!--<TextView-->
+                        <!--style="@style/MyTitle"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Company Name"-->
+                        <!--android:textColor="@android:color/white" />-->
+
+                    </com.github.florent37.parallax.ParallaxView>
+
+                </com.wonderkiln.blurkit.BlurLayout>
+
+
+            </FrameLayout>
+
+
+        </com.github.florent37.parallax.ParallaxView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#eaeaea" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardNameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="italic"
+                        android:text="Dentist"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:padding="30dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#58f7ff">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Call now" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cardNameContainer">
+
+                <include layout="@layout/extended_doc_info" />
+
+            </LinearLayout>
+
+
+            <!--
+            <com.github.florent37.parallax.ParallaxView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:parallaxHorizontal="1.2"
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/primary_light"
+                    app:cardElevation="4dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="#parallax"
+                        android:textColor="@android:color/white" />
+                </android.support.v7.widget.CardView>
+            </com.github.florent37.parallax.ParallaxView>
+    -->
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</com.github.florent37.parallax.ScrollView>
